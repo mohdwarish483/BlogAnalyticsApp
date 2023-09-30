@@ -24,12 +24,15 @@ this Express.js application serve as a blog analytics and search tool, utilizing
 - Endpoint: `/api/blog-stats`
 - Description: This route fetches data from the provided third-party blog API using a `GET` request.
 
-**Curl Request:**
-```bash
+- curl --request GET \
+  --url http://localhost:4000/api/blog-stats
+
+
+**Curl Request for the third party api:**
 curl --request GET \
   --url https://intent-kit-16.hasura.app/api/rest/blogs \
   --header 'x-hasura-admin-secret: 32qR4KmXOIpsGPQKMqEJHGJS27G5s7HdSKO3gdtQd2kv5e852SiYwWNfxkZOBuQ6'
-```
+
 
 ### 2. Data Analysis
 
@@ -53,7 +56,11 @@ curl --request GET \
 ### 4. Blog Search Endpoint
 
 - Endpoint: `/api/blog-search`
-- Description: This route accepts a query parameter (`/api/blog-search?query=how to`) and filters the blogs based on the provided query string (case-insensitive).
+- Description: This route accepts a query parameter (`/api/blog-search?query=how`) and filters the blogs based on the provided query string (case-insensitive).
+
+- curl --request GET \
+  --url http://localhost:4000/api/blog-search?query=how
+
 
 ### 5. Error Handling
 
