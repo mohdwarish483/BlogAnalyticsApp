@@ -2,6 +2,21 @@
 
 this Express.js application serve as a blog analytics and search tool, utilizing Lodash for data analysis and Express middleware for data retrieval. It offers insightful statistics based on data fetched from a third-party blog API and provides a search functionality.
 
+## How to Use
+
+1. Clone the repository.
+2. Install dependencies using `npm install`.
+3. Start the server with `npm start` or `npm run dev`.
+4. Access the API using endpoints described above.
+
+## Hosted Link 
+- I have also hosted this on render
+- https://blogsearchanalytics.onrender.com
+
+## Port Number
+
+- The server runs on port `4000` by default. You can change it in the `app.js` file.
+
 ## Functionality
 
 ### 1. Data Retrieval
@@ -49,20 +64,6 @@ curl --request GET \
 - I have also Implemented bonus challenge using Lodash's `memoize` function.
 - It Caches analytics results and search results for a certain period (default: 1 hour).
 - If the same requests are made within the caching period, returns cached results instead of re-fetching and re-analyzing the data.
-
-## How to Use
-
-1. Clone the repository.
-2. Install dependencies using `npm install`.
-3. Start the server with `npm start` or `npm run dev`.
-4. Access the API using endpoints described above.
-
-## Hosted Link 
-
-
-## Port Number
-
-- The server runs on port `4000` by default. You can change it in the `app.js` file.
 
 ## Author
 
